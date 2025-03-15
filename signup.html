@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="icon" type="image/x-icon" href="./picture/cropped-wmremove-transformed.jpeg.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('./picture/image6.png.webp') repeat; 
+            background-size: cover;
+            
+        }
+        .container {
+            background-color: rgba(95, 86, 86, 0.7); 
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            margin: 80px auto; /* Centering the form with space below navbar */
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: white;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(41, 41, 192);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Navigation Bar -->
+    <header class="bg-dark text-white d-flex align-items-center justify-content-between p-3">
+        <div class="d-flex align-items-center">
+            <a href="./index .html"> 
+                <img src="./picture/cropped-wmremove-transformed.jpeg.jpg" alt="Tile Store Logo" style="height: 50px;">
+            </a>  
+            <h1 class="ms-3 mb-0">Tile Store</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="wallTiles" role="button" data-bs-toggle="dropdown">Wall Tiles</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bathroom-wall-tiles.html">Bathroom Wall Tiles</a></li>
+                            <li><a class="dropdown-item" href="kitchen-wall-tiles.html">Kitchen Wall Tiles</a></li>
+                            <li><a class="dropdown-item" href="outdoor-wall-tiles.html">Outdoor Wall Tiles</a></li>
+                            <li><a class="dropdown-item" href="living-room-wall-tiles.html">Living Room</a></li>
+                            <li><a class="dropdown-item" href="bedroom-wall-tiles.html">Bedroom</a></li>
+                            <li><a class="dropdown-item" href="commercial-spaces-wall-tiles.html">Commercial Spaces Tiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="floorTiles" role="button" data-bs-toggle="dropdown">Floor Tiles</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Bathroom Floor Tile.html">Bathroom Floor Tiles</a></li>
+                            <li><a class="dropdown-item" href="Kitchen Floor Tile.html">Kitchen Floor Tiles</a></li>
+                            <li><a class="dropdown-item" href="Outdoor Floor Tile.html">Outdoor Floor Tiles</a></li>
+                            <li><a class="dropdown-item" href="Living Room Floor Tile.html">Living Room</a></li>
+                            <li><a class="dropdown-item" href="Bathroom Floor Tile.html">Bedroom</a></li>
+                            <li><a class="dropdown-item" href="Commercial Spaces Floor Tile.html">Commercial Spaces Tiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./specialtiles.html">Special Tiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogue">E-Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./expertcorner.html">Expert Corner</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactUs" role="button" data-bs-toggle="dropdown">Contact Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contact_us.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback Form</a></li>
+                        </ul>
+                    </li>
+                    <div class="d-flex">
+                        <button class="btn btn-dark me-2">
+                            <a href="./log in code 2.html" class="text-white text-decoration-none">Login</a>
+                        </button>
+                        <button class="btn btn-dark">
+                            <a href="signup.html" class="text-white text-decoration-none">Sign Up</a>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sign Up Form -->
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #99a8b9;
+}
+
+header img {
+    height: 50px;
+}
+
+.navbar {
+    background-color: #575b5e !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+}
+#tileCarousel {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 15px;
+    border-radius: 8px;
+    animation: fadeInUp 4s ease-in-out;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 5px;
+}
+
+.animated-text {
+    animation: fadeInUp 4s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;                /* Allows items to wrap onto new lines */
+  justify-content: space-between; /* Space between the cards */
+  gap: 20px;                      /* Adds space between the cards */
+}
+
+.tile-card {
+  width: 30%;                     /* Each card takes 30% of the row, adjusted for 3 cards per row */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tile-card:hover {
+  transform: scale(1.05);
+}
+
+.tile-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;  /* Ensures the image fully covers the area */
+}
+
+.tile-info {
+  padding: 15px;
+}
+
+.tile-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tile-price {
+  font-size: 20px;
+  color: #2ecc71;
+  margin: 10px 0;
+}
+
+.tile-description {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.buy-btn, .cart-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.buy-btn:hover, .cart-btn:hover {
+  background-color: #2980b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.body {
+  font-family: Arial, sans-serif;
+  background-image: url(./picture/image13.png.jpg);
+  color: #333;
+  padding: 20px;
+  position: relative;
+}
+
+
+h3 {
+  text-align: center;
+  color: #d8c732;
+  margin-bottom: 20px;
+}
+
+
+form {
+  background-color: dark white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input and textarea styl */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+button {
+  background-color: #cec543;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+  font-style:italic ;
+}
+
+      header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #000; /* Ensure background covers full width */
+    z-index: 1000;
+    padding: 10px 20px; /* Adjust padding if needed */
+}
+

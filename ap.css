@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    font-family: Arial, sans-serif;
+    background-color:rgba(252, 252, 255, 0.886);
+   
+}
+/* this is header */
+header{
+    background-color: rgba(115, 116, 126, 0.886);
+    color:rgb(34, 33, 33);
+    padding: 25px;
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+}
+ 
+ 
+ /*  carousel */
+ .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.carousel-item p {
+    margin-left: 20px;
+    width: 45%; 
+    padding-left: 20px;
+}
+
+
+.carousel-item p {
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+/* collection heading */
+h2 {
+    text-align: center; 
+    margin-top: 150px;   
+    margin-bottom: 20px; 
+}
+
+
+
+/* cards */
+
+.contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.naveed-friends {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.naveed-friends:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.tile-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.naveed-friends:hover .tile-image {
+    transform: scale(1.05);
+}
+
+
+.tiles{
+    padding: 15px;
+}
+
+.car-tile {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tile-price {
+    font-size: 1.2rem;
+    color: #1ebc38;
+    margin-bottom: 10px;
+}
+
+.tile-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+.download-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+@media (max-width: 768px) {
+    .download-btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+.download-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+}
+.container {
+    max-width: 90%;
+    width: 800px;
+}
+p{
+    margin-top: 10%;
+    color:white;
+}
+
+
+
